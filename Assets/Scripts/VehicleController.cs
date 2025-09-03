@@ -9,6 +9,11 @@ public class VehicleController : MonoBehaviour
         
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Hit");
+    }
+
     void Update()
     {
         float move = Input.GetAxis("Vertical") * movespeed * Time.deltaTime;
