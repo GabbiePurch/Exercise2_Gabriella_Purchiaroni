@@ -21,5 +21,11 @@ public class Collection : MonoBehaviour
             Debug.Log("Coin Picked Up");
             Destroy(other.gameObject, destroyDelay);
         }
+
+        if (other.tag == "Boost")
+        {
+            Debug.Log("Boosted Speed");
+            Destroy(other.gameObject);
+        }
     }
 }

@@ -36,5 +36,10 @@ public class VehicleController : MonoBehaviour
             coin += 1;
             GameText.text = "Coins:" + coin;
         }
+
+        if (other.tag == "Boost")
+        {
+            movespeed += 5;
+        }
     }
 }
